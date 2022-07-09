@@ -109,19 +109,19 @@ function OrderScreen(props) {
             </li>
             <li>
               <div>Items</div>
-              <div>${order.itemsPrice}</div>
+              <div>{parseFloat(order.itemsPrice).toFixed(3)} VND</div>
             </li>
             <li>
               <div>Shipping</div>
-              <div>${order.shippingPrice}</div>
+              <div>{parseFloat(order.shippingPrice).toFixed(3)} VND</div>
             </li>
             <li>
               <div>Tax</div>
-              <div>${order.taxPrice}</div>
+              <div>{parseFloat(order.taxPrice).toFixed(3)} VND</div>
             </li>
             <li>
               <div>Order Total</div>
-              <div>${order.totalPrice}</div>
+              <div>{parseFloat(order.totalPrice).toFixed(3)} VND</div>
             </li>
           </ul>
 

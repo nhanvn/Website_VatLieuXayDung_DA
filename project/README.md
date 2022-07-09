@@ -4,7 +4,8 @@
 ### 1. Clone repo
 
 ```
-
+$ git clone https://github.com/nhanvn/Website_VatLieuXayDung_DA.git
+$ cd project
 ```
 
 ### 2. Install MongoDB

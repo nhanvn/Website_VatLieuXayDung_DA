@@ -73,7 +73,7 @@ function ProductScreen(props) {
                   </a>
                 </li>
                 <li>
-                  Price: <b>${product.price}</b>
+                  Price: <b>{parseFloat(product.price).toFixed(3)} VND</b>                  
                 </li>
                 <li>
                   Description:
@@ -83,7 +83,7 @@ function ProductScreen(props) {
             </div>
             <div className="details-action">
               <ul>
-                <li>Price: {product.price}</li>
+                <li>Price: {parseFloat(product.price).toFixed(3)} VND</li>
                 <li>
                   Status:{' '}
                   {product.countInStock > 0 ? 'In Stock' : 'Unavailable.'}

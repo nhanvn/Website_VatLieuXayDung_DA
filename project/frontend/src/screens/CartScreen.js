@@ -66,7 +66,7 @@ function CartScreen(props) {
                   </div>
                 </div>
                 <div className="cart-price">
-                  ${item.price}
+                  {parseFloat(item.price).toFixed(3)} VND
                 </div>
               </li>
             )
