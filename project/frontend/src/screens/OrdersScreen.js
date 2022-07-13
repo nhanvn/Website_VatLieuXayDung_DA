@@ -48,7 +48,7 @@ function OrdersScreen(props) {
             {orders.map(order => (<tr key={order._id}>
               <td>{order._id}</td>
               <td>{order.createdAt}</td>
-              <td>{order.totalPrice}</td>
+              <td>{parseFloat(order.totalPrice).toFixed(3)} VND</td>
               <td>{order.user.name}</td>
               <td>{order.isPaid.toString()}</td>
               <td>{order.paidAt}</td>
